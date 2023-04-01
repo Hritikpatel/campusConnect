@@ -1,0 +1,341 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    transition: all 250ms ease-in-out;
+    color: rgb(146,147,146);
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: rgb(26,26,26);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.navbar-logo>a{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 35%;
+    width: 35%;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    margin-right: 2%;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 25px;
+    font-size: 20px;
+}
+
+li:hover {
+    font-size: 22px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle-icon:before,
+.navbar-toggle-icon:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggle-icon:before {
+  top: -6px;
+}
+
+.navbar-toggle-icon:after {
+  top: 6px;
+}
+
+
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+
+thead th {
+  padding: 12px;
+  text-align: center;
+  
+}
+
+tr {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    background-color: #282828;
+    border-radius: 10px;
+    margin: 10px 0px;
+    overflow-y: hidden;
+    transition: all 100ms;
+  }
+  thead tr{
+      border-bottom: 1px solid #ccc;
+      border-radius: 0px;
+  }
+  
+  tbody td {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fileList teacherOnly";
+    margin: 15px;
+    margin-bottom: 0px;
+}
+  
+.studentContainer{
+    transition: 0ms;
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "fileList";
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.fileList {
+    grid-area: fileList;
+    background-color: rgb(36,36,36);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    height: 80svh;
+}
+.teacherOnly {
+    display: block;
+    grid-area: teacherOnly;
+    background-color: rgb(36,36,36);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.isStudent{
+    transition: 0ms;
+    display: none;
+}
+
+
+
+input{
+  color: #fff;
+  background-color: #666666;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-style: italic;
+  margin: 10px 0;
+  width: 93%;
+  border: none;
+}
+
+select[multiple]{
+  height: 45px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #333;
+  border: 0;
+}
+
+.file-upload-wrapper:hover:before {
+  background: #0d2b53;
+  cursor: pointer;
+}
+.file-upload-field::-webkit-file-upload-button {
+  display: none;
+}
+option {
+  margin: 3px 7px 3px 7px;
+  font-size: 16px;
+  /* background-color: ; */
+  color: #fff;
+  height: 20px;
+  border-radius: 7px;
+  padding: 10px;
+}
+.submitBtn {
+  color: #fff;
+  background-color: #1f309f;
+  padding: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 15px;
+  font-style: italic;
+  margin: 10px 0;
+  width: 100%;
+  border: none;
+}
+.submitBtn:hover{
+  background-color: #1a2966;
+}
+p{
+  color:firebrick
+    
+}
+  @media (max-width: 1081px) {
+      
+      .navbar {
+          padding: 20px;
+          margin: 10px;
+      }
+      .navbar-menu {
+          margin-left: -25%;
+      }
+      .navbar-menu li {
+          font-size: 16px;
+      }
+      .logo{
+          height: 30%;
+          width: 30%;
+          padding-left: 10px;
+      }
+      .container {
+        gap: 15px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "fileList"
+          "teacherOnly";
+        margin-bottom: 15px;
+    }
+    select[multiple]{
+      width: 96%;
+    }
+    .submitBtn{
+      width: 96%;
+    }
+  }
+  
+  @media (max-width: 795px) {
+      .navbar-menu {
+          display: none;
+      }
+      
+      .navbar-menu {
+          justify-content: flex-start;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+      
+      .show {
+          display: block;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0px;
+          width: 100%;
+          height: 40svh;
+          background-color: #333;
+          padding-top: 5%;
+      }
+  
+      .navbar-menu  li{
+          margin: 20px 30px;
+      }
+  
+      .navbar-toggle {
+          display: block;
+      }
+      
+      .navbar-toggle.active .navbar-toggle-icon {
+          background-color: transparent;
+      }
+      
+      .navbar-toggle.active .navbar-toggle-icon:before {
+          transform: rotate(-45deg);
+          top: 0;
+      }
+      
+      .navbar-toggle.active .navbar-toggle-icon:after {
+          transform: rotate(45deg);
+          top: 0;
+      }
+    }
+
+
+
+
+
+
+
+
+  .fa-file-arrow-down:hover{
+    color: lightseagreen;
+  }
+  .fa-envelope:hover{
+    color: lightseagreen;
+    cursor: pointer;
+  }
+.fa-trash:hover{
+  color: lightcoral;
+  cursor: pointer;
+}

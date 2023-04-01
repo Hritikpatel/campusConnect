@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" href="{% static './css/index.css' %}">
+  <link rel="shortcut icon" href="{% static './image/favicon.png' %}" type="image/x-icon">
+  <script src="{% static './js/index.js' %}"></script>
+  <title>Campus Connect</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="#">
+        <img src="{% static './image/sicsrlogo.png' %}" alt="SICSR" class="logo">
+      </a>
+    </div>
+    <ul class="navbar-menu" id="navbarMenu">
+      <li><a href="{% url 'TimeLine' %}">Timeline</a></li>
+      <li><a href="{% url 'notes' %}">Notes</a></li>
+      <li><a href="{% url 'attendance' %}">Attendance</a></li>
+      <li><a href="{% url 'Home' %}">Connect</a></li>
+      <li><a href="{% url 'LogIn' %}">Log In</a></li>
+    </ul>
+    <button type="button" name="navbarToggle" class="navbar-toggle" id="navbarToggle" >
+      <span class="navbar-toggle-icon"></span>
+    </button>
+  </nav>
+  <div class="container">
+    <table border="2px">
+      <thead>
+        <th>
+          Name
+        </th>
+        <th>Email</th>
+        <th>Phone No.</th>
+        <th>Reasons</th>
+        <th>Timing</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Admission Department</td>
+          <td>admission.department@sicsr.ac.in</td>
+          <td>020-12345678</td>
+          <td>Admissions, Uniform Collection, Application Status, Application Requirement</td>
+          <td>10:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+          <td>Accounts Department</td>
+          <td>accounts.depratment@sicsr.ac.in</td>
+          <td>020-98765432</td>
+          <td>Fee Payment, Examination Fees, Hostel Slip, Tuition, Scholarships</td>
+          <td>10:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+          <td>Library Department</td>
+          <td>library.department@sicsr.ac.in</td>
+          <td>020-98979695</td>
+          <td>Library Resources, Borrowing Policies, Equipmnt and Facilities, Accessibility serices</td>
+          <td>10:00 am to 4:00 pm</td>
+        </tr>
+        <tr>
+          <td>Exam Department</td>
+          <td>exam.department@sicsr.ac.in</td>
+          <td>020-44444444</td>
+          <td>Exam schedules, Exam results, Exam policies, Exam locations</td>
+          <td>10:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+          <td>IT Department</td>
+          <td>sysadmin@sicsr.ac.in</td>
+          <td>020-89898989</td>
+          <td>Technical Support, Account access, Network Access, Software and Hardware Support</td>
+          <td>10:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+          <td>Hostel Department</td>
+          <td>hostel.department@sicsr.ac.in</td>
+          <td>020-78787878</td>
+          <td>Room Assignment, Maintenance Repairs, Safety and Security, Billinng and Payments, Amenities and Facilities</td>
+          <td>10:00 am to 4:00 pm</td>
+        </tr>
+        <tr>
+          <td>Healthcare Department</td>
+          <td>healthcare.department@sicsr.ac.in</td>
+          <td>020-10010010</td>
+          <td>Medical Emergencies, Health Education, Health and wellness programs, Immunizations</td>
+          <td>10:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+          <td>Grievance Department</td>
+          <td>grievance.department@sicsr.ac.in</td>
+          <td>020-12131415</td>
+          <td>Academic Issues, Discrimination or Harassment, Financial Issues</td>
+          <td>10:00 am to 4:00 pm</td>
+        </tr>
+        <tr>
+          <td>Medical Officer</td>
+          <td>sicsr.mo@sicsr.ac.in</td>
+          <td>020-19181918</td>
+          <td>Seeking Medical Attention, Medical Advice, Immunizations, Health Promotion</td>
+          <td>10:00 am to 5:00 pm</td>
+        </tr>
+        <tr>
+          <td>coordinator</td>
+          <td>bca.coordinator@sicsr.ac.in</td>
+          <td>020-07070707</td>
+          <td>Admissions, Academic Advising, Campus Events, Faculty and Staff Support</td>
+          <td>10:00 am to 5:00 pm</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

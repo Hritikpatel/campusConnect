@@ -1,0 +1,1 @@
+mail = {"clg_mail" : "hrp2121228@sicsr.ac.in", "clg_key" : "","1st_mail" : "", "1st_key" : "", "2nd_mail" : "hritikpatel2nd@gmail.com", "2nd_key": "wyrqybgvncedolxz", "Helper_mail" : "dropmailhelper@gamil.com", "Helper_key": "eugggsqhzudvjjry", "dhruvKhatri" : "dhk2121047@sicsr.ac.in", "service": "", "serviceKey": "frlgqyzzqylehkjr"}
