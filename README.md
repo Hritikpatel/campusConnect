@@ -2,7 +2,7 @@
 ## LMS-SIS Web App
 
 ### Campus Connect
-Welcome to the "Campus Connect" project, a LMS-SIS for my college. This project developed keeping my college's information strcture.
+Welcome to the "Campus Connect" project, a LMS-SIS for my college. This project is developed keeping my college's information strcture in mind.
 
 ## Features
 - Convenient and user-friendly tool for students and staff
