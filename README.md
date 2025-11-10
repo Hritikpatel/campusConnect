@@ -68,7 +68,7 @@ It serves as a **proof of concept** that a well-designed LMS-SIS can:
 
 ## 🧑‍💻 Developer
 
-**Developed by:** [Your Name]  
+**Developed by:** Hritik 
 **Project:** Campus Connect – LMS-SIS Web App  
 **Tech Stack:** Django, JavaScript, jQuery, CSS, SQL  
 
